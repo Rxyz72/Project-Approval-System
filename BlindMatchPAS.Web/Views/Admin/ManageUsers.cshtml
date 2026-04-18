@@ -1,0 +1,257 @@
+﻿@* @model List<BlindMatchPAS.Web.Controllers.UserWithRoleViewModel>
+@{
+    ViewData["Title"] = "Manage Users";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    body {
+        background: #f5f7fa;
+    }
+
+    .page-container {
+        padding: 40px 20px;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    .page-header {
+        background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        color: white;
+        padding: 40px;
+        border-radius: 15px;
+        margin-bottom: 30px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+        .page-header h1 {
+            margin: 0;
+            font-size: 32px;
+            font-weight: 700;
+        }
+
+    .btn-back {
+        background: rgba(255,255,255,0.2);
+        color: white;
+        padding: 10px 25px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.3s ease;
+    }
+
+        .btn-back:hover {
+            background: white;
+            color: #4facfe;
+        }
+
+    .btn-create {
+        background: white;
+        color: #4facfe;
+        padding: 12px 30px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+
+        .btn-create:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            color: #4facfe;
+        }
+
+    .alert-custom {
+        padding: 15px 20px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        font-weight: 500;
+    }
+
+    .alert-success {
+        background: #d4edda;
+        color: #155724;
+        border: 1px solid #c3e6cb;
+    }
+
+    .alert-danger {
+        background: #f8d7da;
+        color: #721c24;
+        border: 1px solid #f5c6cb;
+    }
+
+    .data-table {
+        background: white;
+        border-radius: 12px;
+        padding: 25px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        overflow-x: auto;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    thead {
+        background: #f8f9fa;
+    }
+
+    th {
+        padding: 15px;
+        text-align: left;
+        font-weight: 700;
+        color: #333;
+        border-bottom: 2px solid #dee2e6;
+    }
+
+    td {
+        padding: 15px;
+        border-bottom: 1px solid #dee2e6;
+        color: #666;
+    }
+
+    tr:hover {
+        background: #f8f9fa;
+    }
+
+    .role-badge {
+        padding: 5px 12px;
+        border-radius: 15px;
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+        display: inline-block;
+    }
+
+    .role-student {
+        background: #cfe2ff;
+        color: #084298;
+    }
+
+    .role-supervisor {
+        background: #f8d7da;
+        color: #842029;
+    }
+
+    .role-moduleleader {
+        background: #d1e7dd;
+        color: #0f5132;
+    }
+
+    .role-admin {
+        background: #fff3cd;
+        color: #856404;
+    }
+
+    .btn-delete {
+        background: #dc3545;
+        color: white;
+        padding: 6px 15px;
+        border-radius: 6px;
+        border: none;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        font-size: 12px;
+    }
+
+        .btn-delete:hover {
+            background: #c82333;
+        }
+
+    .empty-state {
+        text-align: center;
+        padding: 60px 20px;
+        color: #999;
+    }
+
+    .empty-icon {
+        font-size: 64px;
+        margin-bottom: 20px;
+        opacity: 0.5;
+    }
+</style>
+
+<div class="page-container">
+    <div class="page-header">
+        <h1>👥 Manage Users</h1>
+        <a asp-action="Dashboard" class="btn-back">← Back to Dashboard</a>
+    </div>
+
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert-custom alert-success">
+            ✓ @TempData["Success"]
+        </div>
+    }
+
+    @if (TempData["Error"] != null)
+    {
+        <div class="alert-custom alert-danger">
+            ✗ @TempData["Error"]
+        </div>
+    }
+
+    <a asp-action="CreateUser" class="btn-create">➕ Create New User</a>
+
+    <div class="data-table">
+        @if (!Model.Any())
+        {
+            <div class="empty-state">
+                <div class="empty-icon">👥</div>
+                <p>No users found</p>
+            </div>
+        }
+        else
+        {
+            <table>
+                <thead>
+                    <tr>
+                        <th>Full Name</th>
+                        <th>Email</th>
+                        <th>Department</th>
+                        <th>Role</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.OrderBy(u => u.Role).ThenBy(u => u.User.FullName))
+                    {
+                        <tr>
+                            <td><strong>@item.User.FullName</strong></td>
+                            <td>@item.User.Email</td>
+                            <td>@item.User.Department</td>
+                            <td>
+                                <span class="role-badge role-@item.Role.ToLower()">
+                                    @item.Role
+                                </span>
+                            </td>
+                            <td>
+                                @if (item.User.Id != User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value)
+                                {
+                                    <form method="post" asp-action="DeleteUser" asp-route-userId="@item.User.Id" style="display: inline;"
+                                          onsubmit="return confirm('Are you sure you want to delete @item.User.FullName?');">
+                                        @Html.AntiForgeryToken()
+                                        <button type="submit" class="btn-delete">🗑️ Delete</button>
+                                    </form>
+                                }
+                                else
+                                {
+                                    <span style="color: #999; font-size: 12px;">(Current User)</span>
+                                }
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+    </div>
+</div> *@

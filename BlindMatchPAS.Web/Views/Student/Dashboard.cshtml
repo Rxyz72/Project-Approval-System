@@ -1,0 +1,397 @@
+﻿@* @model BlindMatchPAS.Web.Controllers.StudentDashboardViewModel
+@{
+    ViewData["Title"] = "Student Dashboard";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+    * {
+        font-family: 'Lato', sans-serif;
+    }
+    body {
+        background: #f5f7fa;
+    }
+
+    .dashboard-container {
+        padding: 40px 20px;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    .dashboard-header {
+        background: linear-gradient(135deg, #ffffff 50%, #005000 30%);
+        color: Black;
+        padding: 40px;
+        border-radius: 5px;
+        margin-bottom: 30px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+        .dashboard-header h4 {
+            margin: 0;
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        .dashboard-header p {
+            margin: 10px 0 0 0;
+            opacity: 0.9;
+            font-size: 16px;
+        }
+
+    .btn-create {
+        background-color: Black;
+        color: white;
+        padding: 12px 30px;
+        border-radius: 4px;
+        font-weight: 600;
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 20px;
+        transition: all 0.3s ease;
+        border: none;
+    }
+
+        .btn-create:hover {
+            transform: translateY(-2px);
+            background-color: grey;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+    .alert-custom {
+        padding: 15px 20px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        font-weight: 500;
+    }
+
+    .alert-success {
+        background: #d4edda;
+        color: #155724;
+        border: 1px solid #c3e6cb;
+    }
+
+    .alert-danger {
+        background: #f8d7da;
+        color: #721c24;
+        border: 1px solid #f5c6cb;
+    }
+
+    .section-title {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        color: #333;
+        display: flex;
+        align-items: center;
+    }
+
+    .proposal-card {
+        background: white;
+        border-radius: 10px;
+        padding: 25px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        transition: all 0.3s ease;
+    }
+
+        .proposal-card:hover {
+            box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+            transform: translateY(-2px);
+        }
+
+    .proposal-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        margin-bottom: 5px;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .proposal-title {
+        font-size: 20px;
+        font-weight: 700;
+        color: #0058ab;
+        margin: 0;
+        flex: 1;
+    }
+
+    .status-badge {
+        padding: 6px 15px;
+        border-radius: 20px;
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    .status-pending {
+        background: #fff3cd;
+        color: #856404;
+    }
+
+    .status-review {
+        background: #cfe2ff;
+        color: #084298;
+    }
+
+    .status-matched {
+        background: #d1e7dd;
+        color: #0f5132;
+    }
+
+    .status-withdrawn {
+        background: #f8d7da;
+        color: #721c24;
+    }
+
+    .proposal-meta {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 15px;
+        flex-wrap: wrap;
+        font-size: 14px;
+        color: #666;
+    }
+
+    .meta-item {
+        display: flex;
+        background-color: black;
+        color: white;
+        padding:6px 14px;
+        border-radius: 6px;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .proposal-abstract {
+        color: #666;
+        line-height: 1.6;
+        margin-bottom: 15px;
+    }
+
+    .proposal-actions {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .btn-action {
+        padding: 8px 20px;
+        border-radius: 6px;
+        font-size: 14px;
+        font-weight: 600;
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .btn-edit {
+        background-color: Black;
+        color: white;
+    }
+
+        .btn-edit:hover {
+            background-color: Grey;
+            color: white;
+        }
+
+    .btn-withdraw {
+        background-color: Red;
+        color: white;
+    }
+
+        .btn-withdraw:hover {
+            background: #c82333;
+        }
+
+    .match-card {
+        background: linear-gradient(135deg, #d1e7dd 0%, #badbcc 100%);
+        border-radius: 5px;
+        padding: 25px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        border-left: 5px solid #198754;
+    }
+
+    .match-header {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 5px;
+    }
+
+    .match-icon {
+        font-size: 40px;
+    }
+
+    .match-title {
+        font-size: 20px;
+        font-weight: 700;
+        color: #0f5132;
+        margin: 0;
+    }
+
+    .match-subtitle {
+        color: #0f5132;
+        opacity: 0.8;
+    }
+
+    .supervisor-info {
+        background: white;
+        padding: 20px;
+        border-radius: 5px;
+        margin-top: 15px;
+    }
+
+    .supervisor-name {
+        font-size: 18px;
+        font-weight: 700;
+        color: dodgerblue;
+        margin-bottom: 5px;
+    }
+
+    .supervisor-detail {
+        color: #666;
+        margin-bottom: 5px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .empty-state {
+        text-align: center;
+        padding: 60px 20px;
+        background: white;
+        border-radius: 5px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    }
+
+    .empty-icon {
+        font-size: 64px;
+        margin-bottom: 20px;
+        opacity: 0.5;
+    }
+
+    .empty-title {
+        font-size: 24px;
+        font-weight: 700;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    .empty-text {
+        color: #666;
+        margin-bottom: 20px;
+    }
+</style>
+
+<div class="dashboard-container">
+    <div class="dashboard-header">
+        <h4>Student Dashboard</h4>
+        <p>Manage your project proposals and track matching status</p>
+        <a asp-action="CreateProposal" class="btn-create">+ Create New Proposal</a>
+    </div>
+
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert-custom alert-success">
+            ✓ @TempData["Success"]
+        </div>
+    }
+
+    @if (TempData["Error"] != null)
+    {
+        <div class="alert-custom alert-danger">
+            ✗ @TempData["Error"]
+        </div>
+    }
+
+    <!-- Matched Projects Section -->
+    @if (Model.Matches.Any(m => m.IsConfirmed))
+    {
+        <h3 class="section-title">Matched Projects</h3>
+        @foreach (var match in Model.Matches.Where(m => m.IsConfirmed))
+        {
+            <div class="match-card">
+                <div class="match-header">
+                    <div class="match-icon">✅</div>
+                    <div>
+                        <h3 class="match-title">@match.ProjectProposal?.Title</h3>
+                        <p class="match-subtitle">Matched on @match.ConfirmedAt?.ToString("MMM dd, yyyy")</p>
+                    </div>
+                </div>
+
+                <div class="supervisor-info">
+                    <div class="supervisor-name">Supervisor: @match.Supervisor?.FullName</div>
+                    <div class="supervisor-detail">
+                        <span>Email:</span>
+                        <span>@match.Supervisor?.Email</span>
+                    </div>
+                    <div class="supervisor-detail">
+                        <span>Departmen:</span>
+                        <span>@match.Supervisor?.Department</span>
+                    </div>
+                </div>
+            </div>
+        }
+    }
+
+    <!-- Active Proposals Section -->
+    <h3 class="section-title">My Proposals</h3>
+
+    @if (!Model.Proposals.Any())
+    {
+        <div class="empty-state">
+            <div class="empty-icon">📝</div>
+            <h3 class="empty-title">No Proposals Yet</h3>
+            <p class="empty-text">Start by creating your first project proposal!</p>
+            <a asp-action="CreateProposal" class="btn-create">+ Create New Proposal</a>
+        </div>
+    }
+    else
+    {
+        @foreach (var proposal in Model.Proposals)
+        {
+            <div class="proposal-card">
+                <div class="proposal-header">
+                    <h3 class="proposal-title">@proposal.Title</h3>
+                    <span class="status-badge status-@proposal.Status.ToString().ToLower()">
+                        @proposal.Status
+                    </span>
+                </div>
+
+                <div class="proposal-abstract">
+                    @proposal.Abstract
+                </div>
+
+                <div class="proposal-meta">
+                    <div class="meta-item">
+                        <span><strong>Area:</strong> @proposal.ResearchArea?.Name</span>
+                    </div>
+                    <div class="meta-item">
+                        <span><strong>TechStack:</strong> @proposal.TechStack</span>
+                    </div>
+                    <div class="meta-item">
+                        <span><strong>Submitted:</strong> @proposal.CreatedAt.ToString("MMM dd, yyyy")</span>
+                    </div>
+                </div>
+
+                @if (proposal.Status != ProposalStatus.Matched && proposal.Status != ProposalStatus.Withdrawn)
+                {
+                    <div class="proposal-actions">
+                        <a asp-action="EditProposal" asp-route-id="@proposal.Id" class="btn-action btn-edit">
+                            ✏️ Edit
+                        </a>
+                        <form method="post" asp-action="WithdrawProposal" asp-route-id="@proposal.Id" style="display: inline;"
+                              onsubmit="return confirm('Are you sure you want to withdraw this proposal?');">
+                            @Html.AntiForgeryToken()
+                            <button type="submit" class="btn-action btn-withdraw">🗑️ Withdraw</button>
+                        </form>
+                    </div>
+                }
+            </div>
+        }
+    }
+</div> *@

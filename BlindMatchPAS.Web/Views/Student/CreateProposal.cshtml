@@ -1,0 +1,239 @@
+﻿@* @model BlindMatchPAS.Web.Controllers.CreateProposalViewModel
+@{
+    ViewData["Title"] = ViewBag.ProposalId != null ? "Edit Proposal" : "Create Proposal";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var isEdit = ViewBag.ProposalId != null;
+}
+
+<style>
+    body {
+        background: #f5f7fa;
+    }
+
+    .form-container {
+        max-width: 900px;
+        margin: 40px auto;
+        padding: 20px;
+    }
+
+    .form-card {
+        background: white;
+        border-radius: 15px;
+        padding: 40px;
+        box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+    }
+
+    .form-header {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+        .form-header h1 {
+            color: Black;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .form-header p {
+            color: #666;
+        }
+
+    .form-group {
+        margin-bottom: 25px;
+    }
+
+    .form-label {
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 8px;
+        display: block;
+    }
+
+    .form-control, .form-select, .form-textarea {
+        width: 100%;
+        padding: 12px 15px;
+        border: 2px solid #e0e0e0;
+        border-radius: 8px;
+        font-size: 14px;
+        transition: all 0.3s ease;
+    }
+
+        .form-control:focus, .form-select:focus, .form-textarea:focus {
+            border-color: #667eea;
+            outline: none;
+            box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+        }
+
+    .form-textarea {
+        min-height: 120px;
+        resize: vertical;
+    }
+
+    .char-counter {
+        font-size: 12px;
+        color: #999;
+        text-align: right;
+        margin-top: 5px;
+    }
+
+    .btn-submit {
+        background-color: Black;
+        color: white;
+        padding: 14px 40px;
+        border-radius: 5px;
+        border: none;
+        font-weight: 600;
+        font-size: 16px;
+        cursor: pointer;
+        width: 100%;
+    }
+
+        .btn-submit:hover {
+            box-shadow: 0 5px 20px rgba(171, 171, 171, 0.4);
+        }
+
+    .btn-cancel {
+        background: #6c757d;
+        color: white;
+        padding: 14px 40px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 16px;
+        display: inline-block;
+        text-align: center;
+        transition: all 0.3s ease;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+        .btn-cancel:hover {
+            background: #5a6268;
+            color: white;
+        }
+
+    .error-message {
+        color: #dc3545;
+        font-size: 13px;
+        margin-top: 5px;
+    }
+
+    .info-box {
+        background: #e7ffeb;
+        border-left: 4px solid #00a621;
+        padding: 15px;
+        border-radius: 6px;
+        margin-bottom: 25px;
+        font-size: 14px;
+    }
+
+        .info-box strong {
+            display: block;
+            margin-bottom: 8px;
+            color: #00a621;
+        }
+
+        .info-box ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        .info-box li {
+            margin-bottom: 5px;
+            color: #333;
+        }
+</style>
+
+<div class="form-container">
+    <div class="form-card">
+        <div class="form-header">
+            <h1>@(isEdit ? "Edit" : "Create") Project Proposal</h1>
+            <p>@(isEdit ? "Update your proposal details" : "Submit your innovative project idea for blind matching")</p>
+        </div>
+
+        <div class="info-box">
+            <strong>💡 Submission Tips:</strong>
+            <ul>
+                <li>Write a clear, descriptive title that captures your project's essence</li>
+                <li>Your abstract should explain the problem, solution, and impact</li>
+                <li>Be specific about technologies you plan to use</li>
+                <li>Choose the research area that best aligns with your project</li>
+                <li>Supervisors will review your proposal anonymously based on technical merit</li>
+            </ul>
+        </div>
+
+        <form method="post" asp-action="@(isEdit ? "EditProposal" : "CreateProposal")" asp-route-id="@ViewBag.ProposalId">
+            @Html.AntiForgeryToken()
+
+            <div class="form-group">
+                <label class="form-label">Project Title *</label>
+                <input type="text" asp-for="Title" class="form-control"
+                       placeholder="AI-Powered Mental Health Chatbot"
+                       maxlength="200" required>
+                <span asp-validation-for="Title" class="error-message"></span>
+                <div class="char-counter">
+                    <span id="titleCount">0</span> / 200 characters
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Research Area *</label>
+                <select asp-for="ResearchAreaId" class="form-select" required>
+                    <option value="">-- Select Research Area --</option>
+                    @foreach (var area in ViewBag.ResearchAreas as List<BlindMatchPAS.Web.Models.ResearchArea>)
+                    {
+                        <option value="@area.Id">@area.Name - @area.Description</option>
+                    }
+                </select>
+                <span asp-validation-for="ResearchAreaId" class="error-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Technology Stack *</label>
+                <input type="text" asp-for="TechStack" class="form-control"
+                       placeholder="Python, TensorFlow, Flask, React, PostgreSQL"
+                       maxlength="500" required>
+                <span asp-validation-for="TechStack" class="error-message"></span>
+                <div class="char-counter">
+                    <span id="techCount">0</span> / 500 characters
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Abstract *</label>
+                <textarea asp-for="Abstract" class="form-textarea"
+                          placeholder="Describe your project: What problem does it solve? What is your approach? What will be the impact?"
+                          maxlength="2000" required></textarea>
+                <span asp-validation-for="Abstract" class="error-message"></span>
+                <div class="char-counter">
+                    <span id="abstractCount">0</span> / 2000 characters
+                </div>
+            </div>
+
+            <button type="submit" class="btn-submit">
+                @(isEdit ? "Update Proposal" : "Submit Proposal")
+            </button>
+            <a asp-action="Dashboard" class="btn-cancel">Cancel</a>
+        </form>
+    </div>
+</div>
+
+<script>
+    // Character counters
+    document.getElementById('Title').addEventListener('input', function() {
+        document.getElementById('titleCount').textContent = this.value.length;
+    });
+    document.getElementById('TechStack').addEventListener('input', function() {
+        document.getElementById('techCount').textContent = this.value.length;
+    });
+    document.getElementById('Abstract').addEventListener('input', function() {
+        document.getElementById('abstractCount').textContent = this.value.length;
+    });
+
+    // Initialize counters on page load
+    window.onload = function() {
+        document.getElementById('titleCount').textContent = document.getElementById('Title').value.length;
+        document.getElementById('techCount').textContent = document.getElementById('TechStack').value.length;
+        document.getElementById('abstractCount').textContent = document.getElementById('Abstract').value.length;
+    };
+</script> *@
