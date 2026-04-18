@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\Ruvishan Sankalpa\\source\\repos\\BlindMatchPAS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8BC924C0-F42F-9DDA-7F1F-56230B9ACBA7}|BlindMatchPAS.Web\\BlindMatchPAS.Web.csproj|c:\\users\\ruvishan sankalpa\\source\\repos\\blindmatchpas\\blindmatchpas.web\\views\\supervisor\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8BC924C0-F42F-9DDA-7F1F-56230B9ACBA7}|BlindMatchPAS.Web\\BlindMatchPAS.Web.csproj|solutionrelative:blindmatchpas.web\\views\\supervisor\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8BC924C0-F42F-9DDA-7F1F-56230B9ACBA7}|BlindMatchPAS.Web\\BlindMatchPAS.Web.csproj|c:\\users\\ruvishan sankalpa\\source\\repos\\blindmatchpas\\blindmatchpas.web\\views\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{8BC924C0-F42F-9DDA-7F1F-56230B9ACBA7}|BlindMatchPAS.Web\\BlindMatchPAS.Web.csproj|solutionrelative:blindmatchpas.web\\views\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
@@ -24,26 +20,14 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Dashboard.cshtml",
-              "DocumentMoniker": "C:\\Users\\Ruvishan Sankalpa\\source\\repos\\BlindMatchPAS\\BlindMatchPAS.Web\\Views\\Supervisor\\Dashboard.cshtml",
-              "RelativeDocumentMoniker": "BlindMatchPAS.Web\\Views\\Supervisor\\Dashboard.cshtml",
-              "ToolTip": "C:\\Users\\Ruvishan Sankalpa\\source\\repos\\BlindMatchPAS\\BlindMatchPAS.Web\\Views\\Supervisor\\Dashboard.cshtml",
-              "RelativeToolTip": "BlindMatchPAS.Web\\Views\\Supervisor\\Dashboard.cshtml",
-              "ViewState": "AgIAAPYBAAAAAAAAAAAAAAICAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-18T19:15:35.184Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Dashboard.cshtml",
               "DocumentMoniker": "C:\\Users\\Ruvishan Sankalpa\\source\\repos\\BlindMatchPAS\\BlindMatchPAS.Web\\Views\\Admin\\Dashboard.cshtml",
               "RelativeDocumentMoniker": "BlindMatchPAS.Web\\Views\\Admin\\Dashboard.cshtml",
               "ToolTip": "C:\\Users\\Ruvishan Sankalpa\\source\\repos\\BlindMatchPAS\\BlindMatchPAS.Web\\Views\\Admin\\Dashboard.cshtml",
               "RelativeToolTip": "BlindMatchPAS.Web\\Views\\Admin\\Dashboard.cshtml",
-              "ViewState": "AgIAAH0BAAAAAAAAAAAQwJgBAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-18T19:15:24.148Z"
+              "WhenOpened": "2026-04-18T19:15:24.148Z",
+              "EditorCaption": ""
             }
           ]
         }
