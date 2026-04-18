@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\Ruvishan Sankalpa\\source\\repos\\BlindMatchPAS\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8BC924C0-F42F-9DDA-7F1F-56230B9ACBA7}|BlindMatchPAS.Web\\BlindMatchPAS.Web.csproj|c:\\users\\ruvishan sankalpa\\source\\repos\\blindmatchpas\\blindmatchpas.web\\models\\projectproposal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BC924C0-F42F-9DDA-7F1F-56230B9ACBA7}|BlindMatchPAS.Web\\BlindMatchPAS.Web.csproj|solutionrelative:blindmatchpas.web\\models\\projectproposal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BC924C0-F42F-9DDA-7F1F-56230B9ACBA7}|BlindMatchPAS.Web\\BlindMatchPAS.Web.csproj|c:\\users\\ruvishan sankalpa\\source\\repos\\blindmatchpas\\blindmatchpas.web\\views\\supervisor\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8BC924C0-F42F-9DDA-7F1F-56230B9ACBA7}|BlindMatchPAS.Web\\BlindMatchPAS.Web.csproj|solutionrelative:blindmatchpas.web\\views\\supervisor\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BC924C0-F42F-9DDA-7F1F-56230B9ACBA7}|BlindMatchPAS.Web\\BlindMatchPAS.Web.csproj|c:\\users\\ruvishan sankalpa\\source\\repos\\blindmatchpas\\blindmatchpas.web\\controllers\\supervisorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BC924C0-F42F-9DDA-7F1F-56230B9ACBA7}|BlindMatchPAS.Web\\BlindMatchPAS.Web.csproj|solutionrelative:blindmatchpas.web\\controllers\\supervisorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8BC924C0-F42F-9DDA-7F1F-56230B9ACBA7}|BlindMatchPAS.Web\\BlindMatchPAS.Web.csproj|c:\\users\\ruvishan sankalpa\\source\\repos\\blindmatchpas\\blindmatchpas.web\\views\\student\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{8BC924C0-F42F-9DDA-7F1F-56230B9ACBA7}|BlindMatchPAS.Web\\BlindMatchPAS.Web.csproj|solutionrelative:blindmatchpas.web\\views\\student\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -13,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{8BC924C0-F42F-9DDA-7F1F-56230B9ACBA7}|BlindMatchPAS.Web\\BlindMatchPAS.Web.csproj|c:\\users\\ruvishan sankalpa\\source\\repos\\blindmatchpas\\blindmatchpas.web\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8BC924C0-F42F-9DDA-7F1F-56230B9ACBA7}|BlindMatchPAS.Web\\BlindMatchPAS.Web.csproj|solutionrelative:blindmatchpas.web\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8BC924C0-F42F-9DDA-7F1F-56230B9ACBA7}|BlindMatchPAS.Web\\BlindMatchPAS.Web.csproj|c:\\users\\ruvishan sankalpa\\source\\repos\\blindmatchpas\\blindmatchpas.web\\controllers\\supervisorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8BC924C0-F42F-9DDA-7F1F-56230B9ACBA7}|BlindMatchPAS.Web\\BlindMatchPAS.Web.csproj|solutionrelative:blindmatchpas.web\\controllers\\supervisorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8BC924C0-F42F-9DDA-7F1F-56230B9ACBA7}|BlindMatchPAS.Web\\BlindMatchPAS.Web.csproj|c:\\users\\ruvishan sankalpa\\source\\repos\\blindmatchpas\\blindmatchpas.web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -55,10 +63,6 @@
       "RelativeMoniker": "D:0:0:{8BC924C0-F42F-9DDA-7F1F-56230B9ACBA7}|BlindMatchPAS.Web\\BlindMatchPAS.Web.csproj|solutionrelative:blindmatchpas.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8BC924C0-F42F-9DDA-7F1F-56230B9ACBA7}|BlindMatchPAS.Web\\BlindMatchPAS.Web.csproj|c:\\users\\ruvishan sankalpa\\source\\repos\\blindmatchpas\\blindmatchpas.web\\views\\supervisor\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8BC924C0-F42F-9DDA-7F1F-56230B9ACBA7}|BlindMatchPAS.Web\\BlindMatchPAS.Web.csproj|solutionrelative:blindmatchpas.web\\views\\supervisor\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8BC924C0-F42F-9DDA-7F1F-56230B9ACBA7}|BlindMatchPAS.Web\\BlindMatchPAS.Web.csproj|c:\\users\\ruvishan sankalpa\\source\\repos\\blindmatchpas\\blindmatchpas.web\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8BC924C0-F42F-9DDA-7F1F-56230B9ACBA7}|BlindMatchPAS.Web\\BlindMatchPAS.Web.csproj|solutionrelative:blindmatchpas.web\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -73,10 +77,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{8BC924C0-F42F-9DDA-7F1F-56230B9ACBA7}|BlindMatchPAS.Web\\BlindMatchPAS.Web.csproj|c:\\users\\ruvishan sankalpa\\source\\repos\\blindmatchpas\\blindmatchpas.web\\models\\match.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8BC924C0-F42F-9DDA-7F1F-56230B9ACBA7}|BlindMatchPAS.Web\\BlindMatchPAS.Web.csproj|solutionrelative:blindmatchpas.web\\models\\match.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8BC924C0-F42F-9DDA-7F1F-56230B9ACBA7}|BlindMatchPAS.Web\\BlindMatchPAS.Web.csproj|c:\\users\\ruvishan sankalpa\\source\\repos\\blindmatchpas\\blindmatchpas.web\\models\\projectproposal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8BC924C0-F42F-9DDA-7F1F-56230B9ACBA7}|BlindMatchPAS.Web\\BlindMatchPAS.Web.csproj|solutionrelative:blindmatchpas.web\\models\\projectproposal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -90,45 +90,20 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\Ruvishan Sankalpa\\source\\repos\\BlindMatchPAS\\BlindMatchPAS.Web\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "BlindMatchPAS.Web\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\Ruvishan Sankalpa\\source\\repos\\BlindMatchPAS\\BlindMatchPAS.Web\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "BlindMatchPAS.Web\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAiwCsAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-17T21:05:25.708Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "StudentController.cs",
-              "DocumentMoniker": "C:\\Users\\Ruvishan Sankalpa\\source\\repos\\BlindMatchPAS\\BlindMatchPAS.Web\\Controllers\\StudentController.cs",
-              "RelativeDocumentMoniker": "BlindMatchPAS.Web\\Controllers\\StudentController.cs",
-              "ToolTip": "C:\\Users\\Ruvishan Sankalpa\\source\\repos\\BlindMatchPAS\\BlindMatchPAS.Web\\Controllers\\StudentController.cs",
-              "RelativeToolTip": "BlindMatchPAS.Web\\Controllers\\StudentController.cs",
-              "ViewState": "AgIAALgAAAAAAAAAAAAqwNIAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-17T21:14:39.711Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "SupervisorController.cs",
               "DocumentMoniker": "C:\\Users\\Ruvishan Sankalpa\\source\\repos\\BlindMatchPAS\\BlindMatchPAS.Web\\Controllers\\SupervisorController.cs",
               "RelativeDocumentMoniker": "BlindMatchPAS.Web\\Controllers\\SupervisorController.cs",
               "ToolTip": "C:\\Users\\Ruvishan Sankalpa\\source\\repos\\BlindMatchPAS\\BlindMatchPAS.Web\\Controllers\\SupervisorController.cs",
               "RelativeToolTip": "BlindMatchPAS.Web\\Controllers\\SupervisorController.cs",
-              "ViewState": "AgIAAI4AAAAAAAAAAAAIwKsAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAJgAAAAAAAAAAAAqwLIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-17T21:17:26.466Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "ManageUsers.cshtml",
               "DocumentMoniker": "C:\\Users\\Ruvishan Sankalpa\\source\\repos\\BlindMatchPAS\\BlindMatchPAS.Web\\Views\\Admin\\ManageUsers.cshtml",
               "RelativeDocumentMoniker": "BlindMatchPAS.Web\\Views\\Admin\\ManageUsers.cshtml",
@@ -140,7 +115,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "CreateProposal.cshtml",
               "DocumentMoniker": "C:\\Users\\Ruvishan Sankalpa\\source\\repos\\BlindMatchPAS\\BlindMatchPAS.Web\\Views\\Student\\CreateProposal.cshtml",
               "RelativeDocumentMoniker": "BlindMatchPAS.Web\\Views\\Student\\CreateProposal.cshtml",
@@ -148,12 +123,11 @@
               "RelativeToolTip": "BlindMatchPAS.Web\\Views\\Student\\CreateProposal.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-17T21:16:33.636Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-17T21:16:33.636Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Dashboard.cshtml",
               "DocumentMoniker": "C:\\Users\\Ruvishan Sankalpa\\source\\repos\\BlindMatchPAS\\BlindMatchPAS.Web\\Views\\Student\\Dashboard.cshtml",
               "RelativeDocumentMoniker": "BlindMatchPAS.Web\\Views\\Student\\Dashboard.cshtml",
@@ -166,7 +140,57 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Dashboard.cshtml",
+              "DocumentMoniker": "C:\\Users\\Ruvishan Sankalpa\\source\\repos\\BlindMatchPAS\\BlindMatchPAS.Web\\Views\\Supervisor\\Dashboard.cshtml",
+              "RelativeDocumentMoniker": "BlindMatchPAS.Web\\Views\\Supervisor\\Dashboard.cshtml",
+              "ToolTip": "C:\\Users\\Ruvishan Sankalpa\\source\\repos\\BlindMatchPAS\\BlindMatchPAS.Web\\Views\\Supervisor\\Dashboard.cshtml",
+              "RelativeToolTip": "BlindMatchPAS.Web\\Views\\Supervisor\\Dashboard.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-17T21:18:19.663Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProjectProposal.cs",
+              "DocumentMoniker": "C:\\Users\\Ruvishan Sankalpa\\source\\repos\\BlindMatchPAS\\BlindMatchPAS.Web\\Models\\ProjectProposal.cs",
+              "RelativeDocumentMoniker": "BlindMatchPAS.Web\\Models\\ProjectProposal.cs",
+              "ToolTip": "C:\\Users\\Ruvishan Sankalpa\\source\\repos\\BlindMatchPAS\\BlindMatchPAS.Web\\Models\\ProjectProposal.cs",
+              "RelativeToolTip": "BlindMatchPAS.Web\\Models\\ProjectProposal.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAQwCgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T16:47:22.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "C:\\Users\\Ruvishan Sankalpa\\source\\repos\\BlindMatchPAS\\BlindMatchPAS.Web\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "BlindMatchPAS.Web\\Controllers\\StudentController.cs",
+              "ToolTip": "C:\\Users\\Ruvishan Sankalpa\\source\\repos\\BlindMatchPAS\\BlindMatchPAS.Web\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "BlindMatchPAS.Web\\Controllers\\StudentController.cs",
+              "ViewState": "AgIAALgAAAAAAAAAAAAqwNIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T21:14:39.711Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Ruvishan Sankalpa\\source\\repos\\BlindMatchPAS\\BlindMatchPAS.Web\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "BlindMatchPAS.Web\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Ruvishan Sankalpa\\source\\repos\\BlindMatchPAS\\BlindMatchPAS.Web\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "BlindMatchPAS.Web\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAiwCsAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T21:05:25.708Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "AdminController.cs",
               "DocumentMoniker": "C:\\Users\\Ruvishan Sankalpa\\source\\repos\\BlindMatchPAS\\BlindMatchPAS.Web\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "BlindMatchPAS.Web\\Controllers\\AdminController.cs",
@@ -178,7 +202,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Users\\Ruvishan Sankalpa\\source\\repos\\BlindMatchPAS\\BlindMatchPAS.Web\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "BlindMatchPAS.Web\\Controllers\\AccountController.cs",
@@ -190,7 +214,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "ManageResearchAreas.cshtml",
               "DocumentMoniker": "C:\\Users\\Ruvishan Sankalpa\\source\\repos\\BlindMatchPAS\\BlindMatchPAS.Web\\Views\\Admin\\ManageResearchAreas.cshtml",
               "RelativeDocumentMoniker": "BlindMatchPAS.Web\\Views\\Admin\\ManageResearchAreas.cshtml",
@@ -202,7 +226,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "Dashboard.cshtml",
               "DocumentMoniker": "C:\\Users\\Ruvishan Sankalpa\\source\\repos\\BlindMatchPAS\\BlindMatchPAS.Web\\Views\\Admin\\Dashboard.cshtml",
               "RelativeDocumentMoniker": "BlindMatchPAS.Web\\Views\\Admin\\Dashboard.cshtml",
@@ -214,7 +238,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "CreateUser.cshtml",
               "DocumentMoniker": "C:\\Users\\Ruvishan Sankalpa\\source\\repos\\BlindMatchPAS\\BlindMatchPAS.Web\\Views\\Admin\\CreateUser.cshtml",
               "RelativeDocumentMoniker": "BlindMatchPAS.Web\\Views\\Admin\\CreateUser.cshtml",
@@ -226,7 +250,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Users\\Ruvishan Sankalpa\\source\\repos\\BlindMatchPAS\\BlindMatchPAS.Web\\Views\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "BlindMatchPAS.Web\\Views\\Account\\Login.cshtml",
@@ -238,7 +262,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\Ruvishan Sankalpa\\source\\repos\\BlindMatchPAS\\BlindMatchPAS.Web\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "BlindMatchPAS.Web\\Views\\Shared\\_Layout.cshtml",
@@ -250,19 +274,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Dashboard.cshtml",
-              "DocumentMoniker": "C:\\Users\\Ruvishan Sankalpa\\source\\repos\\BlindMatchPAS\\BlindMatchPAS.Web\\Views\\Supervisor\\Dashboard.cshtml",
-              "RelativeDocumentMoniker": "BlindMatchPAS.Web\\Views\\Supervisor\\Dashboard.cshtml",
-              "ToolTip": "C:\\Users\\Ruvishan Sankalpa\\source\\repos\\BlindMatchPAS\\BlindMatchPAS.Web\\Views\\Supervisor\\Dashboard.cshtml",
-              "RelativeToolTip": "BlindMatchPAS.Web\\Views\\Supervisor\\Dashboard.cshtml",
-              "ViewState": "AgIAANwBAAAAAAAAAAAQwPcBAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-17T21:18:19.663Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "ApplicationUser.cs",
               "DocumentMoniker": "C:\\Users\\Ruvishan Sankalpa\\source\\repos\\BlindMatchPAS\\BlindMatchPAS.Web\\Models\\ApplicationUser.cs",
               "RelativeDocumentMoniker": "BlindMatchPAS.Web\\Models\\ApplicationUser.cs",
@@ -274,7 +286,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "ResearchArea.cs",
               "DocumentMoniker": "C:\\Users\\Ruvishan Sankalpa\\source\\repos\\BlindMatchPAS\\BlindMatchPAS.Web\\Models\\ResearchArea.cs",
               "RelativeDocumentMoniker": "BlindMatchPAS.Web\\Models\\ResearchArea.cs",
@@ -286,7 +298,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "Match.cs",
               "DocumentMoniker": "C:\\Users\\Ruvishan Sankalpa\\source\\repos\\BlindMatchPAS\\BlindMatchPAS.Web\\Models\\Match.cs",
               "RelativeDocumentMoniker": "BlindMatchPAS.Web\\Models\\Match.cs",
@@ -298,19 +310,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "ProjectProposal.cs",
-              "DocumentMoniker": "C:\\Users\\Ruvishan Sankalpa\\source\\repos\\BlindMatchPAS\\BlindMatchPAS.Web\\Models\\ProjectProposal.cs",
-              "RelativeDocumentMoniker": "BlindMatchPAS.Web\\Models\\ProjectProposal.cs",
-              "ToolTip": "C:\\Users\\Ruvishan Sankalpa\\source\\repos\\BlindMatchPAS\\BlindMatchPAS.Web\\Models\\ProjectProposal.cs",
-              "RelativeToolTip": "BlindMatchPAS.Web\\Models\\ProjectProposal.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAA8wCgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-17T16:47:22.483Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Ruvishan Sankalpa\\source\\repos\\BlindMatchPAS\\BlindMatchPAS.Web\\appsettings.json",
               "RelativeDocumentMoniker": "BlindMatchPAS.Web\\appsettings.json",
