@@ -6,21 +6,21 @@
 
 <style>
     body {
-        background: #f5f7fa;
+        background: #ffffff;
     }
 
     .page-container {
-        padding: 40px 20px;
+        padding: 20px 20px;
         max-width: 1200px;
         margin: 0 auto;
     }
 
     .page-header {
-        background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        background-color: #006593;
         color: white;
-        padding: 40px;
-        border-radius: 15px;
-        margin-bottom: 30px;
+        padding: 20px;
+        border-radius: 6px;
+        margin-bottom: 15px;
         box-shadow: 0 10px 30px rgba(0,0,0,0.1);
         display: flex;
         justify-content: space-between;
@@ -36,18 +36,18 @@
         }
 
     .btn-back {
-        background: rgba(255,255,255,0.2);
+        background-color: black;
         color: white;
         padding: 10px 25px;
-        border-radius: 8px;
+        border-radius: 6px;
         text-decoration: none;
         font-weight: 600;
         transition: all 0.3s ease;
     }
 
         .btn-back:hover {
-            background: white;
-            color: #4facfe;
+            background-color: grey;
+            color: white;
         }
 
     .alert-custom {
@@ -71,7 +71,7 @@
 
     .create-form {
         background: white;
-        border-radius: 12px;
+        border-radius: 6px;
         padding: 30px;
         box-shadow: 0 2px 10px rgba(0,0,0,0.08);
         margin-bottom: 30px;
@@ -116,10 +116,10 @@
     }
 
     .btn-create {
-        background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        background-color: Black;
         color: white;
-        padding: 12px 30px;
-        border-radius: 8px;
+        padding: 10px 20px;
+        border-radius: 6px;
         border: none;
         font-weight: 600;
         cursor: pointer;
@@ -127,8 +127,7 @@
     }
 
         .btn-create:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(79, 172, 254, 0.4);
+            background-color: grey;
         }
 
     .areas-grid {
@@ -139,21 +138,13 @@
 
     .area-card {
         background: white;
-        border-radius: 12px;
+        border-radius: 6px;
         padding: 25px;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-        transition: all 0.3s ease;
-        border-left: 5px solid #4facfe;
+        box-shadow: 0 0px 10px #e6e6e6;
     }
-
-        .area-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 20px rgba(0,0,0,0.12);
-        }
 
         .area-card.inactive {
             opacity: 0.6;
-            border-left-color: #dc3545;
         }
 
     .area-header {
@@ -239,7 +230,10 @@
 
 <div class="page-container">
     <div class="page-header">
-        <h1>🔬 Manage Research Areas</h1>
+        <h1>
+            <svg xmlns="http://www.w3.org/2000/svg" height="42px" viewBox="0 -960 960 960" width="42px" fill="#ffffff"><path d="M200-120v-80h200v-80q-83 0-141.5-58.5T200-480q0-61 33.5-111t90.5-73q8-34 35.5-55t62.5-21l-22-62 38-14-14-36 76-28 12 38 38-14 110 300-38 14 14 38-76 28-12-38-38 14-24-66q-15 14-34.5 21t-39.5 5q-22-2-41-13.5T338-582q-27 16-42.5 43T280-480q0 50 35 85t85 35h320v80H520v80h240v80H200Zm346-458 36-14-68-188-38 14 70 188Zm-97.5-33.5Q460-623 460-640t-11.5-28.5Q437-680 420-680t-28.5 11.5Q380-657 380-640t11.5 28.5Q403-600 420-600t28.5-11.5ZM546-578Zm-126-62Zm0 0Z" /></svg>
+            Manage Research Areas
+        </h1>
         <a asp-action="Dashboard" class="btn-back">← Back to Dashboard</a>
     </div>
 
@@ -259,7 +253,9 @@
 
     <!-- Create New Research Area Form -->
     <div class="create-form">
-        <div class="form-title">➕ Create New Research Area</div>
+        <div class="form-title">
+            Create New Research Area
+        </div>
         <form method="post" asp-action="CreateResearchArea">
             @Html.AntiForgeryToken()
 
@@ -275,7 +271,10 @@
                           placeholder="Brief description of this research area" required></textarea>
             </div>
 
-            <button type="submit" class="btn-create">✅ Create Research Area</button>
+            <button type="submit" class="btn-create">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z" /></svg>
+                Create Research Area
+            </button>
         </form>
     </div>
 
@@ -305,7 +304,7 @@
                     <form method="post" asp-action="ToggleResearchArea" asp-route-id="@area.Id" style="display: inline;">
                         @Html.AntiForgeryToken()
                         <button type="submit" class="btn-toggle @(area.IsActive ? "btn-deactivate" : "btn-activate")">
-                            @(area.IsActive ? "🔴 Deactivate" : "🟢 Activate")
+                            @(area.IsActive ? "Deactivate" : "Activate")
                         </button>
                     </form>
                 </div>

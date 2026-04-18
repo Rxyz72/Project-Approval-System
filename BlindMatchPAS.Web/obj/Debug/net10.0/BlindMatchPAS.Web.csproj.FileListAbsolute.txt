@@ -266,7 +266,6 @@ C:\Users\Ruvishan Sankalpa\source\repos\BlindMatchPAS\BlindMatchPAS.Web\obj\Debu
 C:\Users\Ruvishan Sankalpa\source\repos\BlindMatchPAS\BlindMatchPAS.Web\obj\Debug\net10.0\staticwebassets.development.json
 C:\Users\Ruvishan Sankalpa\source\repos\BlindMatchPAS\BlindMatchPAS.Web\obj\Debug\net10.0\staticwebassets.build.endpoints.json
 C:\Users\Ruvishan Sankalpa\source\repos\BlindMatchPAS\BlindMatchPAS.Web\obj\Debug\net10.0\swae.build.ex.cache
-C:\Users\Ruvishan Sankalpa\source\repos\BlindMatchPAS\BlindMatchPAS.Web\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
 C:\Users\Ruvishan Sankalpa\source\repos\BlindMatchPAS\BlindMatchPAS.Web\obj\Debug\net10.0\BlindMat.BC388157.Up2Date
 C:\Users\Ruvishan Sankalpa\source\repos\BlindMatchPAS\BlindMatchPAS.Web\obj\Debug\net10.0\BlindMatchPAS.Web.dll
 C:\Users\Ruvishan Sankalpa\source\repos\BlindMatchPAS\BlindMatchPAS.Web\obj\Debug\net10.0\refint\BlindMatchPAS.Web.dll
@@ -346,3 +345,4 @@ C:\Users\Ruvishan Sankalpa\source\repos\BlindMatchPAS\BlindMatchPAS.Web\bin\Debu
 C:\Users\Ruvishan Sankalpa\source\repos\BlindMatchPAS\BlindMatchPAS.Web\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
 C:\Users\Ruvishan Sankalpa\source\repos\BlindMatchPAS\BlindMatchPAS.Web\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
 C:\Users\Ruvishan Sankalpa\source\repos\BlindMatchPAS\BlindMatchPAS.Web\bin\Debug\net10.0\runtimes\win\lib\net9.0\System.Windows.Extensions.dll
+C:\Users\Ruvishan Sankalpa\source\repos\BlindMatchPAS\BlindMatchPAS.Web\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt

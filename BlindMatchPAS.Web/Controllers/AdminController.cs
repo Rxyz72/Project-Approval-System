@@ -142,6 +142,20 @@ namespace BlindMatchPAS.Web.Controllers
                 return RedirectToAction(nameof(ManageUsers));
             }
 
+            // Delete user's proposals if student
+            var proposals = await _context.ProjectProposals
+                .Where(p => p.StudentId == userId)
+                .ToListAsync();
+            _context.ProjectProposals.RemoveRange(proposals);
+
+            // Delete user's matches if supervisor
+            var matches = await _context.Matches
+                .Where(m => m.SupervisorId == userId)
+                .ToListAsync();
+            _context.Matches.RemoveRange(matches);
+
+            await _context.SaveChangesAsync();
+
             var result = await _userManager.DeleteAsync(user);
             if (result.Succeeded)
             {
@@ -149,13 +163,12 @@ namespace BlindMatchPAS.Web.Controllers
             }
             else
             {
-                TempData["Error"] = "Failed to delete user!";
+                TempData["Error"] = "Failed to delete user: " + string.Join(", ", result.Errors.Select(e => e.Description));
             }
 
             return RedirectToAction(nameof(ManageUsers));
         }
 
-        // GET: Admin/ManageResearchAreas
         // GET: Admin/ManageResearchAreas
         [Authorize(Roles = "ModuleLeader")]
         public async Task<IActionResult> ManageResearchAreas()

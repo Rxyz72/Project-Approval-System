@@ -1,3 +1,4 @@
 <Solution>
+  <Project Path="BlindMatchPAS.Tests/BlindMatchPAS.Tests.csproj" />
   <Project Path="BlindMatchPAS.Web/BlindMatchPAS.Web.csproj" />
 </Solution>

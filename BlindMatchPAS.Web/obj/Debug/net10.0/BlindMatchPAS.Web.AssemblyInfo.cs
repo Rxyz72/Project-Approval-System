@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BlindMatchPAS.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b884e71e93ed7d103d9a9c8b3a31dd248d416ccd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+437c2088bf2e12d19cb4672f36c11015c411ab06")]
 [assembly: System.Reflection.AssemblyProductAttribute("BlindMatchPAS.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BlindMatchPAS.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -182,30 +182,66 @@ namespace BlindMatchPAS.Web.Controllers
             TempData["Success"] = "Proposal withdrawn successfully!";
             return RedirectToAction(nameof(Dashboard));
         }
+
+        // POST: Student/DeleteProposal/5
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteProposal(int id)
+        {
+            var userId = _userManager.GetUserId(User);
+            var proposal = await _context.ProjectProposals
+                .FirstOrDefaultAsync(p => p.Id == id && p.StudentId == userId);
+
+            if (proposal == null)
+                return NotFound();
+
+            if (proposal.Status == ProposalStatus.Matched)
+            {
+                TempData["Error"] = "Cannot delete a matched proposal!";
+                return RedirectToAction(nameof(Dashboard));
+            }
+
+            // Check if there are any pending matches
+            var existingMatch = await _context.Matches
+                .FirstOrDefaultAsync(m => m.ProjectProposalId == id);
+
+            if (existingMatch != null)
+            {
+                _context.Matches.Remove(existingMatch);
+            }
+
+            _context.ProjectProposals.Remove(proposal);
+            await _context.SaveChangesAsync();
+
+            TempData["Success"] = "Proposal deleted successfully!";
+            return RedirectToAction(nameof(Dashboard));
+        }
     }
 
-    // ViewModels
-    public class StudentDashboardViewModel
-    {
-        public List<ProjectProposal> Proposals { get; set; } = new();
-        public List<Match> Matches { get; set; } = new();
-    }
+        // ViewModels
+        public class StudentDashboardViewModel
+        {
+            public List<ProjectProposal> Proposals { get; set; } = new();
+            public List<Match> Matches { get; set; } = new();
+        }
 
-    public class CreateProposalViewModel
-    {
-        [Required]
-        [StringLength(200)]
-        public string Title { get; set; } = string.Empty;
+        public class CreateProposalViewModel
+        {
+            [Required]
+            [StringLength(200)]
+            public string Title { get; set; } = string.Empty;
 
-        [Required]
-        [StringLength(2000)]
-        public string Abstract { get; set; } = string.Empty;
+            [Required]
+            [StringLength(2000)]
+            public string Abstract { get; set; } = string.Empty;
 
-        [Required]
-        [StringLength(500)]
-        public string TechStack { get; set; } = string.Empty;
+            [Required]
+            [StringLength(500)]
+            public string TechStack { get; set; } = string.Empty;
 
-        [Required]
-        public int ResearchAreaId { get; set; }
-    }
+            [Required]
+            public int ResearchAreaId { get; set; }
+        }
+
+
 }
